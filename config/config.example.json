@@ -1,0 +1,28 @@
+{
+  "sshConfig": "",
+  "logger": {
+    "log_level": "debug"
+  },
+  "hosts": [
+    {
+      "name": "TunnelName with credentials for host",
+      "host": "LOCAL_PORT:REMOTE_IP_OR_DOMAIN:REMOTE_PORT",
+      "connection": {
+        "login": "user@host",
+        "password": "passwd"
+      }
+    },
+    {
+      "name": "TunnelName with credentials for group of hosts",
+      "host": "LOCAL_PORT:REMOTE_IP_OR_DOMAIN:REMOTE_PORT",
+      "group": "group_name"
+    }
+  ],
+  "group_connections": {
+    "group_name": {
+      "login": "user@host",
+      "password": "passwd"
+    }
+  },
+  "ssh_auth_sock_env": "SSH_AUTH_SOCK"
+}
